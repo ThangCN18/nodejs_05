@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIST KQ</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+
+  <style>
+    .table td,
+    .table th {
+      vertical-align: middle;
+    }
+    .adds {
+      width: 60px;
+      background: rgb(42, 173, 42);
+      text-align: center;
+      line-height: 57px;
+      height: 60px;
+      border-radius: 50%;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+    }
+    .adds:hover {
+      background: green;
+    }
+    .ssss {
+      float: left;
+      width: 70%;
+    }
+    .nav {
+      width: 100%;
+      height: 80px;
+      background-image: linear-gradient(to right, #e69a0e, #e6680e);
+      margin: 0 auto;
+      position: fixed;
+      top: 0;
+    }
+    .logo {
+      height: 100%;
+      /*background: red;*/
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 25px;
+      font-family: Verdana, Geneva, sans-serif;
+      line-height: 80px;
+    }
+    .nav-item {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 80px;
+      height: 100%;
+      background: none;
+      border: none;
+    }
+    .nav-item:hover {
+      background: #fce2c0;
+      color: #e8890c;
+    }
+    .active {
+      background: #fce2c0;
+      color: #e8890c;
+    }
+    .search {
+      width: 100%;
+      height: 100%;
+      padding: 20px 50px;
+    }
+    .search input {
+      background: none;
+      width: 70%;
+      height: 40px;
+      border-radius: 5px;
+      border: solid 1px #fad3af;
+      color: white;
+    }
+    .search input:hover {
+      border: solid 1px #fc9b42;
+    }
+    .search button {
+      background: #de5b09;
+      border: solid 1px white;
+      height: 40px;
+      border-radius: 5px;
+
+      color: white;
+    }
+    .search button:hover {
+      border: solid 1px #fc9b42;
+      background: #facaac;
+      color: #fc9b42;
+    }
+    .head {
+      margin: 110px 0 20px 0;
+    }
+  </style>
+
+  <body>
+    <nav class="row nav">
+      <div class="col-sm-3 logo">REVIEW SCHOOL</div>
+      <div class="col-sm-1"></div>
+
+      <!-- <button class="col-sm-1 nav-item active">Schools</button>
+      <button class="col-sm-1 nav-item">Users</button> -->
+      <!-- <div class="col-sm-1"></div> -->
+      <div class="col-6 ">
+        <div class="search">
+          <input type="text" name="" placeholder="Trường..." />
+          <button>Tìm kiếm</button>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h4 class="head">Danh sách các trường đại học</h4>
+
+      <table class="table table-hover">
+        <thead>
+          <tr class="text-center">
+            <th>Mã Trường</th>
+            <th>Tên Trường</th>
+            <th>Địa Chỉ</th>
+            <th>Số Điện Thoại</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tr class="text-center">
+          <td>TR0001</td>
+          <td>Trường đại học Đông Á</td>
+          <td>Đà Nẵng</td>
+          <td>0357863600</td>
+        </tr>
+      </table>
+    </div>
+    <div class="adds">
+      <a
+        style="
+          width: 100%;
+          height: 100%;
+          display: block;
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+        "
+        href="http://localhost:3000/"
+        >Add</a
+      >
+    </div>
+  </body>
+</html>
